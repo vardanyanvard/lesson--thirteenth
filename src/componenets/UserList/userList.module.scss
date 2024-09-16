@@ -1,0 +1,37 @@
+.userListWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+
+  & th,
+  td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+  }
+
+  & .buttonsWrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    & button {
+      padding: 10px 20px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
